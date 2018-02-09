@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="E:\IMU CENSUS 3.7\IMU CENSUS 29-12-2017 FINAL\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="E:\IMU CENSUS 3.7\IMU CENSUS 29-12-2017 FINAL\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_fd8ba0bff911014209c7042689b3724c977ecc0b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\IMU CENSUS 3.7\IMU CENSUS 29-12-2017 FINAL\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="853e6dd8f326f417e02cccb964099a64bc19367c">
+        <dex dex="E:\IMU CENSUS 3.7\IMU CENSUS 29-12-2017 FINAL\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_b9c1b1f9af191b7385e563668c654c2021c7ddec\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\IMU CENSUS 3.7\IMU CENSUS 29-12-2017 FINAL\app\libs\volley.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="E:\IMU CENSUS 3.7\IMU CENSUS 29-12-2017 FINAL\app\build\intermediates\pre-dexed\debug\volley_8049f1d3f0a25ef2f89c2603534af5f1e12dc8bc.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\IMU CENSUS 3.7\IMU CENSUS 29-12-2017 FINAL\app\libs\ftp4j-1.7.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="abd6a2ba75b142926052c4538611efda49e0b0e2">
+        <dex dex="E:\IMU CENSUS 3.7\IMU CENSUS 29-12-2017 FINAL\app\build\intermediates\transforms\dex\debug\folders\1000\2\ftp4j-1.7.2_60c8e77988a7a1e6af135afc9ca52e9c920dd1f9\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\IMU CENSUS 3.7\IMU CENSUS 29-12-2017 FINAL\app\libs\commons-net-3.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="cd0d5510908225f76c5fe5a3f1df4fa44866f81e">
+        <dex dex="E:\IMU CENSUS 3.7\IMU CENSUS 29-12-2017 FINAL\app\build\intermediates\pre-dexed\debug\commons-net-3.3_7b0bd48b495f37a46b5f9f7534fbae9c251dbaab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\IMU CENSUS 3.7\IMU CENSUS 29-12-2017 FINAL\app\libs\ftp4j-1.7.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="abd6a2ba75b142926052c4538611efda49e0b0e2">
+        <dex dex="E:\IMU CENSUS 3.7\IMU CENSUS 29-12-2017 FINAL\app\build\intermediates\pre-dexed\debug\ftp4j-1.7.2_60c8e77988a7a1e6af135afc9ca52e9c920dd1f9.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\IMU CENSUS 3.7\IMU CENSUS 29-12-2017 FINAL\app\libs\commons-net-3.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="cd0d5510908225f76c5fe5a3f1df4fa44866f81e">
+        <dex dex="E:\IMU CENSUS 3.7\IMU CENSUS 29-12-2017 FINAL\app\build\intermediates\transforms\dex\debug\folders\1000\2\commons-net-3.3_7b0bd48b495f37a46b5f9f7534fbae9c251dbaab\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\IMU CENSUS 3.7\IMU CENSUS 29-12-2017 FINAL\app\libs\volley.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="E:\IMU CENSUS 3.7\IMU CENSUS 29-12-2017 FINAL\app\build\intermediates\transforms\dex\debug\folders\1000\2\volley_8049f1d3f0a25ef2f89c2603534af5f1e12dc8bc\classes.dex" />
+    </item>
+
+</items>
