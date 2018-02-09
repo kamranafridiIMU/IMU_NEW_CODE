@@ -37,6 +37,8 @@ import java.util.ArrayList;
 
 public class FirstScreen extends Activity {
 
+    //First try
+
     public static final String MyPREFERENCES = "MyPrefs";
     final int REQUEST_READ_PHONE_STATE = 0;
     Button update;
