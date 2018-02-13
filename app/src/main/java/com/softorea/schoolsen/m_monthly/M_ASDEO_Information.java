@@ -66,14 +66,8 @@ public class M_ASDEO_Information extends Activity {
         SharedPreferences aa = getSharedPreferences("abcd", MODE_PRIVATE);
         valuereturned = aa.getString("visitycheck", "");
         Calendar calendar = Calendar.getInstance();
-        SimpleDateFormat df3 = new SimpleDateFormat("HH:mm:ss");
-        String formattedDate3 = df3.format(calendar.getTime());
+
         //String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
-        startTime = formattedDate3;
-        SharedPreferences newsf = PreferenceManager.getDefaultSharedPreferences(this);
-        SharedPreferences.Editor editor = newsf.edit();
-        editor.putString("starting_time", startTime);
-        editor.apply();
         back = (Button) findViewById(R.id.ebtn_left);
         next = (Button) findViewById(R.id.ebtn_right);
         visitType = (EditText) findViewById(R.id.visitytpeee);
@@ -246,8 +240,8 @@ public class M_ASDEO_Information extends Activity {
         SharedPreferences preferences = getSharedPreferences("STOREDVALUES", MODE_PRIVATE);
         String namee = preferences.getString("asdeoname", "");
         String noo = preferences.getString("asdeocontactno", "");
-        //asdeono.setText(noo);
-       // asdeoname.setText(namee);
+        asdeono.setText(noo);
+        asdeoname.setText(namee);
         //String valuereturned = preferences.getString("AsdeovisitType", "");
         //visitType.setText(valuereturned);
         /*if (valuereturned.equals("Regular")) {

@@ -96,6 +96,12 @@ public class MBY_SchoolInformation extends Activity {
             String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
             startTime = currentDateTimeString;
         }
+        SharedPreferences newsf = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor1 = newsf.edit();
+        editor1.putString("starting_time", startTime);
+        editor1.apply();
+
+        Toast.makeText(this, startTime, Toast.LENGTH_SHORT).show();
         db = new DatabaseHandler(MBY_SchoolInformation.this);
         sdedoofficname = (EditText) findViewById(R.id.sdeoofficename);
         name = (EditText) findViewById(R.id.schoolname);
