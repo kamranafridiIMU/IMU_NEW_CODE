@@ -20,6 +20,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.softorea.schoolsen.R;
 import com.softorea.schoolsen.databasehelper.DatabaseHandler;
@@ -41,9 +42,11 @@ public class MBY_SchoolInformation extends Activity {
     String id;
     DatabaseHandler db;
     String SLevel, SLevel2, SLevel3, SLevel4;
-    String startTime;
+
     String column2, column3, column8, column9;
     GPSTracker gps;
+    private static String startTime = null;
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -69,6 +72,8 @@ public class MBY_SchoolInformation extends Activity {
             editor.putString("acc1", acc);
             editor.apply();
 
+
+
             // \n is for new line
             //Toast.makeText(getApplicationContext(), "Lat: " + lat + "\nLong: " + lng + " " + acc, Toast.LENGTH_LONG).show();
         } else {
@@ -77,8 +82,14 @@ public class MBY_SchoolInformation extends Activity {
             // Ask user to enable GPS/network in settings
             //gps.showSettingsAlert();
         }
-        String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
-        startTime = currentDateTimeString;
+        if(startTime==null) {
+
+            Toast.makeText(this, "hello", Toast.LENGTH_LONG).show();
+            String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
+
+            startTime = currentDateTimeString;
+        }
+
         db = new DatabaseHandler(MBY_SchoolInformation.this);
         name = (EditText) findViewById(R.id.schoolname);
         district = (EditText) findViewById(R.id.district);
@@ -336,6 +347,7 @@ public class MBY_SchoolInformation extends Activity {
         editor.putString("nano", nano.getText().toString());
         editor.putString("pkno", pkno.getText().toString());
         editor.putString("circloffice", circleofficename.getText().toString());
+        editor.putString("startTime", startTime);
         editor.apply();
     }
 

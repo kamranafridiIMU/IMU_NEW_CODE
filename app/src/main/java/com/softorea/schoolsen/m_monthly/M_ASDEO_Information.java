@@ -62,7 +62,7 @@ public class M_ASDEO_Information extends Activity {
             changename.setText("Name of DEO");
         }
 
-        dbbb = new DatabaseHandler(M_ASDEO_Information.this);
+         dbbb = new DatabaseHandler(M_ASDEO_Information.this);
         SharedPreferences aa = getSharedPreferences("abcd", MODE_PRIVATE);
         valuereturned = aa.getString("visitycheck", "");
         Calendar calendar = Calendar.getInstance();
@@ -230,6 +230,8 @@ public class M_ASDEO_Information extends Activity {
         schoolinfo.setADOName(asdeoname.getText().toString());
         schoolinfo.setADONo(asdeono.getText().toString());
         dbbb.updateSchoolInfo(schoolinfo,id);*/
+
+
         SharedPreferences preferences = getSharedPreferences("STOREDVALUES", MODE_PRIVATE);
         SharedPreferences.Editor editor = preferences.edit();
         editor.putString("AsdeovisitType", visitType.getText().toString());

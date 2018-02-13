@@ -24,6 +24,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.softorea.schoolsen.R;
 import com.softorea.schoolsen.databasehelper.DatabaseHandler;
@@ -51,7 +52,7 @@ public class MBY_SchoolInformation extends Activity {
     DatabaseHandler db;
     String BuildingOwnership;
     String SLevel, SLevel2, SLevel3, SLevel4;
-    String startTime;
+    private static String startTime = null;
     String column2, column3, column8, column9;
     GPSTracker gps;
 
@@ -91,8 +92,10 @@ public class MBY_SchoolInformation extends Activity {
             // Ask user to enable GPS/network in settings
             //gps.showSettingsAlert();
         }
-        String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
-        startTime = currentDateTimeString;
+        if(startTime==null) {
+            String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
+            startTime = currentDateTimeString;
+        }
         db = new DatabaseHandler(MBY_SchoolInformation.this);
         sdedoofficname = (EditText) findViewById(R.id.sdeoofficename);
         name = (EditText) findViewById(R.id.schoolname);
@@ -127,6 +130,8 @@ public class MBY_SchoolInformation extends Activity {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
         id = preferences.getString("emiscode", "");
         String[] schoolLevelSpinner = getResources().getStringArray(R.array.school_level);
+
+
 
         ArrayAdapter<String> schoolLevelAdapter = new ArrayAdapter<String>(MBY_SchoolInformation.this, android.R.layout.simple_spinner_dropdown_item, schoolLevelSpinner);
         schoolLevel.setAdapter(schoolLevelAdapter);
